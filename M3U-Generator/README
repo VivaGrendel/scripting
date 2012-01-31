@@ -1,3 +1,9 @@
 Scan a folder recursively and creates M3U playlist file in each folder containing files … 
 
-[Made for my Boxee box which CANNOT play in continue all the videos of a folder ...]
+[Made for my Boxee box which CANNOT play in continue all the videos of a folder …]
+
+Usage:
+
+m3u-generator.sh <SOURCE_FOLDER>
+
+If <SOURCE_FOLDER> is omitted, current folder is used
