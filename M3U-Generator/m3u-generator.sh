@@ -23,8 +23,8 @@ find "${SRC_DIR}" -type d -name '*' ! -name '.*' | while read fn; do
 		# GET FILENAME
 		echo "PLAYLIST FILE TO CREATE: "${FN}
 		rm "${fn}/${FN}.m3u"
-		ls "${fn}" > "${fn}/${FN}.m3u"
-#		ls "${fn}"
+#		ls "${fn}" > "${fn}/${FN}.m3u"
+		ls "${fn}" | grep -vi "m3u" > "${fn}/${FN}.m3u"
 		
 	fi
 done
